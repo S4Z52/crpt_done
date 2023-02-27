@@ -1,0 +1,8 @@
+<!-- templates/viewer.html -->
+<h1>Загруженные файлы</h1>
+<ul>
+  {% for post in object_list %}
+    <h2>{{ file_name }}</h2>
+    <p>файл <a href="{{ file_upper }}" download>скачать</a></p>
+  {% endfor %}
+</ul>

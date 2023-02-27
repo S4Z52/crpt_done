@@ -1,0 +1,7 @@
+<!-- templates/home.html -->
+<h1>Страница загрузки файлов</h1>
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Загрузить файл</button>
+</form>
